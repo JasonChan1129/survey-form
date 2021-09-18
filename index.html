@@ -1,0 +1,71 @@
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+        <!-- CSS -->
+        <link rel='stylesheet' type="text/css" href="style.css">
+        <title>survey form</title>
+    </head>
+    <body>
+        <div class="container">
+            <header id="header">
+                <h1 id="title">J's Fitness Membership Application</h1>
+                <p id="description">Please fill the form to let us know more about you!</p>
+            </header>
+            <form id="survey-form">
+                <div class="form-items">
+                    <label for="name" id="name-label">Name</label><br>
+                    <input type="text" id="name" name="name" placeholder=" Enter your name" required><br>
+                </div>
+                <div class="form-items">
+                    <label for="email" id="email-label">Email</label><br>
+                    <input type="email" id="email" name="email " placeholder=" Enter your email" required><br>
+                </div>
+                <div class="form-items"> 
+                    <label for="sex" id="sex-label">Sex</label><br>
+                    <input type="radio" id="sex" name="sex" value="Male">
+                    <label>Male</label><br>
+                    <input type="radio" id="sex" name="sex" value="Female">
+                    <label>Female</label><br>
+                </div>
+                <div class="form-items">
+                    <label for="age" id="number-label">Age</label><br>
+                    <input type="number" id="number" name="number" placeholder=" Age" min="18" max="70"><br>
+                </div>
+                <div class="form-items">
+                    <label id="dropdown-label">How many times you workout a week?</label><br>
+                    <select name="dropdown" id="dropdown">
+                        <option disabled selected>Select a group</option>
+                        <option value="1-2">1-2</option>
+                        <option value="3-4">3-4</option>
+                        <option value="5-7">5-7</option>
+                    </select><br>
+                </div>
+                <div class="form-items">
+                    <label id="checkbox-label">Your fintness goal? (can check more than one box)</label><br>
+                    <input type="checkbox" id="check" name="check1" value="1">
+                    <label for="check1"> burn fat</label><br>
+                    <input type="checkbox" id="check" name="check2" value="2">
+                    <label for="check2"> gain muscle</label><br>
+                    <input type="checkbox" id="check" name="check3" value="3">
+                    <label for="check3"> gain power</label><br>
+                    <input type="checkbox" id="check" name="check4" value="4">
+                    <label for="check4"> improve athleticism</label><br>
+                    <input type="checkbox" id="check" name="check5" value="5">
+                    <label for="check5"> keep fit and have fun</label><br>
+                </div>
+                <div class="form-items">
+                    <label id="textarea-label">Tell us more about you!</label><br>
+                    <textarea id="textarea" name="textarea" placeholder="Type here..."></textarea>
+                </div>
+                <div class="form-items">
+                    <button type="submit" id="submit" class="btn btn-success">Submit</button>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
